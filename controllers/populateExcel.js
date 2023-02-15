@@ -19,11 +19,7 @@ const populateExcel = async (req, res, next) => {
     const value = workbook.definedName("date", "14-2-2023");
     workbook.sheet("Sheet1").definedName("name", "Jimmy");
     const cell = workbook.definedName("test");
-    console.log(
-      cell,
-      "----------------------------cell----------------------------"
-    );
-
+    console.log(cell);
     // workbook.sheet("Sheet1").definedName("date").value(date);
     // workbook.sheet("Sheet1").definedName("name").value("foo");
     // workbook.sheet("Sheet1").definedName("price").value("$20");

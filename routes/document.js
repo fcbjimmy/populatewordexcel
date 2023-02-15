@@ -1,7 +1,7 @@
 var express = require("express");
 var router = express.Router();
 const { wordFile, downloadWord } = require("../controllers/wordFile");
-const { populateExcel } = require("../controllers/populateExcel");
+// const { populateExcel } = require("../controllers/populateExcel");
 /* GET home page. */
 router.get("/", function (req, res, next) {
   console.log("hi");
@@ -17,6 +17,6 @@ router.get("/downloadWord", downloadWord); //download word document
 
 //excel
 
-router.get("/excel", populateExcel); //download excel document
+// router.get("/excel", populateExcel); //download excel document
 
 module.exports = router;
